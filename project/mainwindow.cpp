@@ -5,7 +5,7 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    ， ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->SizeEdit->setValidator(new QRegularExpressionValidator(QRegularExpression("[0-9]+$")));
     ui->DelayEdit->setValidator(new QRegularExpressionValidator(QRegularExpression("[0-9]+$")));//此两端确定输入的值只能是正整数
 
-
+//测试
     array.InitArray();
     array.ShuffleArray();//数组的初始化和打乱
 
